@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4>ຈັດການຂໍ້ມູນຜູ້ສະໜອງ</h4>
+                    <button class="btn btn-primary mt-2" data-toggle="modal" data-target="#modal-supply-new"><i class="fas fa-plus"></i> ສ້າງຂໍ້ມູນໃໝ່</button>
+                    <div class="input-group mt-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="ຄົ້ນຫາ">
+                    </div>
+                    <table class="table table-striped mt-4">
+                        <thead>
+                            <tr class="font-weight-bold">
+                                <td>ລະຫັດຜູ້ສະໜອງ</td>
+                                <td>ຊື່ຜູ້ສະໜອງ</td>
+                                <td>ເບີໂທ</td>
+                                <td>ອີເມວ</td>
+                                <td>ທີ່ຢູ່</td>
+                                <td>Action</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>S001</td>
+                                <td>ບໍລິສັດເບຍລາວ</td>
+                                <td>03055522446</td>
+                                <td>beerlao@gmail.com</td>
+                                <td>ບ.ໜອງດາ ມ.ສີໂຄດຕະບອງ ຂ.ນະຄອນຫຼວງວຽງຈັນ</td>
+                                <td width="15%">
+                                    <button class="btn btn-warning text-white mr-1" data-toggle="modal" data-target="#modal-supply-edit"><i class="fas fa-pencil-alt"></i></button>
+                                    <button class="btn btn-danger text-white"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-supply-new></app-supply-new>
+<app-supply-edit></app-supply-edit>

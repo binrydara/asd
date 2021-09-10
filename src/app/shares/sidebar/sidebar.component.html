@@ -1,0 +1,132 @@
+<aside [ngClass]="input_setSidebarState ? 'sidebar-navigation hidden' : 'sidebar-navigation'">
+
+
+
+
+    <!-- home -->
+    <a routerLink="home" class="sidebar-menu-item">
+        <span class="sidebar-menu-item-icon"><i class="fas fa-home"></i></span>
+        <span class="sidebar-menu-item-text">ໜ້າຫຼັກ</span>
+    </a>
+    <!-- end of home -->
+
+
+
+
+    <!-- system access -->
+    <a href="javascript:void(0)" class="sidebar-menu-item dropdown" data-toggle="collapse" data-target="#dropdown-system-access">
+        <div class="left">
+            <span class="sidebar-menu-item-icon"><i class="fas fa-user"></i></span>
+        <span class="sidebar-menu-item-text">ການເຂົ້າເຖິງລະບົບ</span>
+        </div>
+        <div class="right">
+            <span class="sidebar-menu-item-arrow"><i class="fas fa-angle-left"></i></span>
+        </div>
+    </a>
+    <div class="collapse" id="dropdown-system-access">
+        <a routerLink="staff" class="sidebar-menu-item-dropdown">
+            <span class="sidebar-menu-item-icon"><i class="fas fa-angle-right"></i></span>
+            <span class="sidebar-menu-item-text">ຂໍ້ມູນພະນັກງານ</span>
+        </a>
+        <a routerLink="account" class="sidebar-menu-item-dropdown">
+            <span class="sidebar-menu-item-icon"><i class="fas fa-angle-right"></i></span>
+            <span class="sidebar-menu-item-text">ຂໍ້ມູນຜູ້ໃຊ້ງານ</span>
+        </a>
+    </div>
+    <!-- end of system access -->
+
+
+
+
+    <!-- product information -->
+    <a href="javascript:void(0)" class="sidebar-menu-item dropdown" data-toggle="collapse" data-target="#dropdown-product-information">
+        <div class="left">
+            <span class="sidebar-menu-item-icon"><i class="fas fa-database"></i></span>
+        <span class="sidebar-menu-item-text">ກ່ຽວກັບສິນຄ້າ</span>
+        </div>
+        <div class="right">
+            <span class="sidebar-menu-item-arrow"><i class="fas fa-angle-left"></i></span>
+        </div>
+    </a>
+    <div class="collapse" id="dropdown-product-information">
+        <a routerLink="product-category" class="sidebar-menu-item-dropdown">
+            <span class="sidebar-menu-item-icon"><i class="fas fa-angle-right"></i></span>
+            <span class="sidebar-menu-item-text">ຂໍ້ມູນປະເພດສິນຄ້າ</span>
+        </a>
+        <a routerLink="product-unit" class="sidebar-menu-item-dropdown">
+            <span class="sidebar-menu-item-icon"><i class="fas fa-angle-right"></i></span>
+            <span class="sidebar-menu-item-text">ຂໍ້ມູນຫົວໜ່ວຍສິນຄ້າ</span>
+        </a>
+        <a routerLink="products" class="sidebar-menu-item-dropdown">
+            <span class="sidebar-menu-item-icon"><i class="fas fa-angle-right"></i></span>
+            <span class="sidebar-menu-item-text">ຂໍ້ມູນສິນຄ້າ</span>
+        </a>
+    </div>
+    <!-- end of product information -->
+
+
+
+
+
+
+    <!-- zone information  -->
+    <a href="javascript:void(0)" class="sidebar-menu-item dropdown" data-toggle="collapse" data-target="#dropdown-zone-information">
+        <div class="left">
+            <span class="sidebar-menu-item-icon"><i class="fas fa-box"></i></span>
+        <span class="sidebar-menu-item-text">ການຈັດວາງ</span>
+        </div>
+        <div class="right">
+            <span class="sidebar-menu-item-arrow"><i class="fas fa-angle-left"></i></span>
+        </div>
+    </a>
+    <div class="collapse" id="dropdown-zone-information">
+        <a routerLink="zone" class="sidebar-menu-item-dropdown">
+            <span class="sidebar-menu-item-icon"><i class="fas fa-angle-right"></i></span>
+            <span class="sidebar-menu-item-text">ຂໍ້ມູນໂຊນການໃວ້ເຄື່ອງ</span>
+        </a>
+    </div>
+    <!-- end of zone information -->
+
+
+
+
+    <!-- supplier -->
+    <a routerLink="./supplier" class="sidebar-menu-item">
+        <span class="sidebar-menu-item-icon"><i class="fas fa-truck"></i></span>
+        <span class="sidebar-menu-item-text">ຂໍ້ມູນຜູ້ສະໜອງ</span>
+    </a>
+    <!-- end of supplier -->
+
+
+
+    <!-- branch -->
+    <a routerLink="./branch" class="sidebar-menu-item">
+        <span class="sidebar-menu-item-icon"><i class="fas fa-heart"></i></span>
+        <span class="sidebar-menu-item-text">ຂໍ້ມູນສາຂາ</span>
+    </a>
+    <!-- end of branch -->
+
+
+
+
+
+        <!-- inventory information  -->
+        <a href="javascript:void(0)" class="sidebar-menu-item dropdown" data-toggle="collapse" data-target="#dropdown-inventory-information">
+            <div class="left">
+                <span class="sidebar-menu-item-icon"><i class="fas fa-truck-loading"></i></span>
+            <span class="sidebar-menu-item-text">ຄັງສິນຄ້າ</span>
+            </div>
+            <div class="right">
+                <span class="sidebar-menu-item-arrow"><i class="fas fa-angle-left"></i></span>
+            </div>
+        </a>
+        <div class="collapse" id="dropdown-inventory-information">
+            <a routerLink="inventory" class="sidebar-menu-item-dropdown">
+                <span class="sidebar-menu-item-icon"><i class="fas fa-angle-right"></i></span>
+                <span class="sidebar-menu-item-text">ຂໍ້ມູນຄັງສິນຄ້າ</span>
+            </a>
+        </div>
+        <!-- end of inventory information -->
+
+
+</aside>

@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4>ຈັດການຂໍ້ມູນສິນຄ້າ</h4>
+                    <button class="btn btn-primary mt-2" data-toggle="modal" data-target="#modal-product-category-new"><i class="fas fa-plus"></i> ສ້າງຂໍ້ມູນໃໝ່</button>
+                    <div class="input-group mt-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="ຄົ້ນຫາ">
+                    </div>
+                    <table class="table table-striped mt-4">
+                        <thead>
+                            <tr class="font-weight-bold">
+                                <td>ລະຫັດສິນຄ້າ</td>
+                                <td>ຊື່ສິນຄ້າ</td>
+                                <td>ປະເພດສິນຄ້າ</td>
+                                <td>ຫົວໜ່ວຍສິນຄ້າ</td>
+                                <td>ລາຄາຂາຍຍ່ອຍ</td>
+                                <td>ຈຳນວນ</td> 
+                                <td>ລະຫັດຂາຍສົ່ງ</td> 
+                                <td>ລາຄາຂາຍສົ່ງ</td> 
+                                <td>ຈຳນວນ</td> 
+                                <td>Action</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>ແປບຊີ້</td>
+                                <td>ເຄືອງດື່ມ</td>
+                                <td>ຕຸກ</td>
+                                <td class="text-danger">5000</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td class="text-danger">45000</td>
+                                <td>0</td>
+                                <td>
+                                    <button class="btn btn-warning text-white mr-1" data-toggle="modal" data-target="#modal-product-category-edit"><i class="fas fa-pencil-alt"></i></button>
+                                    <button class="btn btn-danger text-white"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-product-new></app-product-new>
+<app-product-edit></app-product-edit>
